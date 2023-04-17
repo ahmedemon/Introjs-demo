@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Js</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/intro.js@2.9.3/introjs.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/combine/npm/intro.js@2.9.3/themes/introjs-modern.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center" data-intro='Hello step one!'>Hello</h1>
+        <p class="text-center" data-intro='Hello step two!'>lorem ipsum test</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@2.9.3/intro.min.js"></script>
+    <script>
+        introJs().start();
+    </script>
+    <!-- <script>
+        // intro js-----------------------------------------------------------------
+        var intro = introJs().setOptions({
+            hidePrev: true,
+            hideNext: true,
+            exitOnOverlayClick: true,
+            exitOnEsc: true,
+            showProgress: true,
+            steps: [{
+                element: document.querySelectorAll("#totalSale")[0],
+                intro: "See total sales",
+                position: 'right'
+            },
+            {
+                element: document.querySelectorAll("#profit")[0],
+                intro: "See total profit",
+                position: 'right'
+            },
+            {
+                element: document.querySelectorAll("#totalDeposit")[0],
+                intro: "See total deposit",
+                position: 'right'
+            },
+            {
+                element: document.querySelectorAll("#totalCost")[0],
+                intro: "See total cost",
+                position: 'right'
+            },
+            {
+                element: document.querySelectorAll("#reports")[0],
+                intro: "All reports showed here",
+                position: 'right',
+            },
+            ]
+        }).oncomplete(() => document.cookie = "intro-complete=true");
+
+        var start = () => intro.start();
+
+        // window.addEventListener("load", () => document.querySelector("#starter").addEventListener("click", e => {
+        //     e.preventDefault();
+        //     start();
+        // }));
+
+        if (document.cookie.split(";").indexOf("intro-complete=true") < 0)
+            window.setTimeout(start, 100);
+        // intro js-----------------------------------------------------------------
+    </script> -->
+</body>
+
+</html>
